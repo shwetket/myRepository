@@ -5,7 +5,6 @@ import io.quarkus.runtime.annotations.QuarkusMain;
 
 @QuarkusMain
 public class HealthApplication {
-
     public static void main(String... args) {
         Quarkus.run(args);
     }
