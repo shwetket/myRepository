@@ -1,12 +1,11 @@
 plugins {
     java
-    id("io.quarkus") version "3.21.0" apply false  // was 3.9.4
+    id("io.quarkus") version "3.29.0" apply false
 }
 
 allprojects {
     group = "com.myRepository"
     version = "1.0.0"
-
     repositories {
         mavenCentral()
     }
@@ -14,7 +13,6 @@ allprojects {
 
 subprojects {
     apply(plugin = "java")
-
     java {
         sourceCompatibility = JavaVersion.VERSION_25
         targetCompatibility = JavaVersion.VERSION_25

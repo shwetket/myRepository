@@ -3,6 +3,6 @@ plugins {
 }
 
 dependencies {
-    implementation(enforcedPlatform("io.quarkus.platform:quarkus-bom:3.21.0"))
+    implementation(enforcedPlatform("io.quarkus.platform:quarkus-bom:3.29.0"))
     implementation("io.quarkus:quarkus-arc")
 }
