@@ -2,8 +2,12 @@ plugins {
     id("io.quarkus")
 }
 
+quarkusDev {
+    jvmArgs = mutableListOf("--add-opens", "java.base/java.lang=ALL-UNNAMED")
+}
+
 dependencies {
-    implementation(enforcedPlatform("io.quarkus.platform:quarkus-bom:3.29.0")) 
+    implementation(enforcedPlatform("io.quarkus.platform:quarkus-bom:3.29.0"))
     implementation("io.quarkus:quarkus-arc")
     implementation("io.quarkus:quarkus-rest")
     implementation("io.quarkus:quarkus-rest-jackson")
